@@ -25,6 +25,9 @@ No Duplication Test Passed - Time Taken :0.224512 Seconds
 Half Duplication Test Passed - Time Taken :0.136747 Seconds  
 All Duplication Test Passed - Time Taken :0.020916 Seconds   
 
+Above output shows that list without any duplicate takes max time, since we need to insert all emails in std::set container
+List with half duplicates takes less time that 1st and list with all duplicate takes much less time since nothing to insert. 
+
 # Analysis of removeDuplicate function
 Space Complexity is O(n) since we are storing unique emails in std::set, where n = number of emails 
 Time Complexity is O(n) since we are looping thro' the std::list once, where n = number of emails
