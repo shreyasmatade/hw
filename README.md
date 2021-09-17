@@ -1,6 +1,6 @@
 # Description
 ## Problem:   
-Write a function that removes all duplicates from an unsorted list of email addresses, while leaving the remaining list in the original order. Prove that this function can handle 100,000 email addresses containing 50% randomly placed duplicates, in under 1 second on a typical laptop.
+Write a function - **removeDuplicate** that removes all duplicates from an unsorted list of email addresses, while leaving the remaining list in the original order. Prove that this function can handle 100,000 email addresses containing 50% randomly placed duplicates, in under 1 second on a typical laptop.
 
 ## Approach:
 We have to remove the duplicates from the unordered list and also preserve the original order. 
@@ -24,4 +24,8 @@ gcc version 9.3.0.
 No Duplication Test Passed - Time Taken :0.224512 Seconds  
 Half Duplication Test Passed - Time Taken :0.136747 Seconds  
 All Duplication Test Passed - Time Taken :0.020916 Seconds   
+
+# Analysis of removeDuplicate function
+Space Complexity is O(n) since we are storing unique emails in std::set, where n = number of emails 
+Time Complexity is O(n) since we are looping thro' the std::list once, where n = number of emails
 
